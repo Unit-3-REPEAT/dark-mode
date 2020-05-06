@@ -7,7 +7,7 @@ const useLocalStore = (key, initialValue) => {
         // Get from local storage by key
         const item = window.localStorage.getItem(key);
         //Parse and return JSON stored or, if undefined, return initialValue
-        return item ? JSON.parese(item) : initialValue;
+        return item ? JSON.parse(item) : initialValue;
     })
 
 
